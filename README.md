@@ -6,7 +6,7 @@ A aplicação alvo dos testes é o [ServeRest](https://serverest.dev/), um ambie
 
 ## 🏗️ Arquitetura e Padrões de Projeto Aplicados
 
-Para demonstrar senioridade e garantir a qualidade do código, os seguintes padrões foram adotados:
+Para garantir a qualidade do código, os seguintes padrões foram adotados:
 
 * **Page Object Model (POM):** Separação dos elementos da interface (seletores `data-testid`) da lógica de testes no Frontend, facilitando a manutenção.
 * **Custom Commands:** Criação de comandos customizados globais (ex: `cy.apiLogin()`) para reaproveitamento de código e otimização de requisições API.
