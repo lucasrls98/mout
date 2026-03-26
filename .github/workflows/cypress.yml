@@ -1,12 +1,23 @@
 name: Cypress Tests
-on: [push]
+on: [push, pull_request]
+
 jobs:
   cypress-run:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
-        uses: actions/checkout@v3
-      - name: Cypress run
+      - name: Checkout do código
+        uses: actions/checkout@v4
+
+      - name: Executar testes Cypress
         uses: cypress-io/github-action@v6
         with:
           build: npm install
+          command: npx cypress run
+
+      - name: Salvar Relatório Mochawesome como Artefato
+        uses: actions/upload-artifact@v4
+        if: always() 
+        with:
+          name: relatorio-cypress-html
+          path: cypress/reports/html
+          retention-days: 5
