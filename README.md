@@ -2,7 +2,7 @@
 
 Este repositório contém a solução para o desafio técnico de automação de testes (Frontend e API) proposto pela Mouts IT. O projeto foi desenvolvido utilizando **Cypress** e **JavaScript**, com foco em boas práticas de engenharia de software, escalabilidade e manutenibilidade.
 
-A aplicação alvo dos testes é o [ServeRest](https://serverest.dev/), um ambiente construído especificamente para a prática de testes de software.
+A aplicação alvo dos testes é o [ServeRest (Swagger API)](https://serverest.dev/)/[ServeRest (Frontend)](https://front.serverest.dev/login), um ambiente construído especificamente para a prática de testes de software.
 
 ## 🏗️ Arquitetura e Padrões de Projeto Aplicados
 
